@@ -2,16 +2,16 @@
 
 #container {
     display: grid;
-    
+    width: 1000px;
+    height: 1000px;
 }
 
 .grid-item {
     border: solid black;
-    height: 75px;
-    width: 75px;
+
 }
 
-.grid-item:hover { 
-    /* changes div's background color on hover */
+.grid-item:hover { /* changes div's background color on hover */
+    
     background-color: aqua;
-}
+ }
