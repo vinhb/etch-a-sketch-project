@@ -16,13 +16,14 @@ function grid(n) { // creates n number of divs and appends to container
 
 grid(16); // initial grid call
 
-
-button.addEventListener('click', function () {
-    input = parseInt(prompt('What size square grid would you like?', 16));
+function remake() {
+    let input = parseInt(prompt('What size square grid would you like?', 16));
     while (!Number.isInteger(input) || input > 100) {
         input = parseInt(prompt('Please enter an integer number less than 100'));
     }
     container.replaceChildren(); // removes existing grid
     
     grid(input); //creates new grid
-});
+}
+
+button.addEventListener('click', remake);
